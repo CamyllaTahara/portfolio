@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar PDF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #7621e6;
+            color: #333;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            color: #9b59b6;  
+        }
+
+        .pdf-container {
+            width: 50%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px; 
+            border-radius: 8px;
+        }
+
+        .back-container {
+           display: flex;
+           justify-content: center; 
+           gap: 10px; 
+           margin-top: 20px;
+        }
+
+        .back-button {
+           padding: 10px 20px;
+           background-color: #4a0072;
+           color: white;
+           text-decoration: none;
+           border-radius: 5px;
+           text-align: center;
+           font-weight: bold;
+        }
+
+        .back-button:hover {
+           background-color: #6a1b9a; 
+           transform: scale(1.01) translateY(-4px); 
+        }
+    </style>
+</head>
+<body>
+    <div class="pdf-container">
+        <h2>Visualização do Certificado</h2>
+        <iframe src="certificados/Certificado Python Fundação Bradesco.pdf"></iframe>
+        <div class="back-container">
+            <a href="index.html" class="back-button">Voltar para o Portfólio</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistir Vídeo - Agenda Médica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #7621e6;
+            color: #333;
+        }
+
+        .descricao {
+            color: #9b59b6;  
+            font-family: 'Arial', sans-serif;  
+            font-size: 14px;  
+            line-height: 1.4;  
+            text-align: center; 
+            padding: 5px;
+            margin-top: 0;
+            text-align: justify;
+        }
+        h2{
+            margin-bottom: 5px;
+            color: #9b59b6;  
+        }
+        .video-container {
+            width: 50%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            
+        }
+        .back-container {
+           display: flex;
+           justify-content: center; 
+           gap: 10px; 
+           margin-top: 20px;
+        }
+        .back-button {
+           padding: 10px 20px;
+           background-color: #4a0072;
+           color: white;
+           text-decoration: none;
+           border-radius: 5px;
+           text-align: center;
+           font-weight: bold;
+        }
+
+        .back-button:hover {
+           background-color: #6a1b9a; 
+           transform: scale(1.01) translateY(-4px); 
+        }
+ </style>
+</head>
+<body>
+    <div class="video-container">
+        <div class="project-description">
+            <h2 class="h2">Agenda Médica</h2>
+            <p class="descricao">
+                Este projeto é um sistema para gerenciamento de agendamentos médicos, permitindo que o usuário:
+
+                Cadastre pacientes,
+                exclua consultas,
+                atualize informações de consultas, e  
+                visualize agendamentos 
+                O sistema foi desenvolvido para otimizar o controle de consultas, proporcionando uma experiência eficiente e organizada, feito no Java com Apache e conexão de dados com MYSQL.
+            </p>
+        </div>
+        <video controls>
+            <source src="videos/Agenda Medica.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+        <div class="back-container">
+        <a href="index.html" class="back-button">Voltar para o Portfólio</a>
+        <a href="https://github.com/CamyllaTahara/Agenda.git" class="back-button">Ver no GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
