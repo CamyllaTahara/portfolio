@@ -11,7 +11,7 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-        
+
         body {
             display: flex;
             justify-content: center;
@@ -23,10 +23,10 @@
 
         h2 {
             margin-bottom: 5px;
-            color: #9b59b6;  
+            color: #9b59b6;
         }
 
-        .img-container {
+        .pdf-container {
             width: 50%;
             max-width: 800px;
             background-color: #fff;
@@ -36,33 +36,60 @@
             text-align: center;
         }
 
-        img {
+        iframe {
             width: 100%;
-            height: auto;
+            height: 500px;
             border-radius: 8px;
         }
 
         .back-container {
-           display: flex;
-           justify-content: center; 
-           gap: 10px; 
-           margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
         }
 
         .back-button {
-           padding: 10px 20px;
-           background-color: #4a0072;
-           color: white;
-           text-decoration: none;
-           border-radius: 5px;
-           text-align: center;
-           font-weight: bold;
+            padding: 10px 20px;
+            background-color: #4a0072;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
         }
 
         .back-button:hover {
-           background-color: #6a1b9a; 
-           transform: scale(1.01) translateY(-4px); 
+            background-color: #6a1b9a;
+            transform: scale(1.01) translateY(-4px);
         }
+
+        
+        @media (max-width: 768px) {
+            .pdf-container {
+                width: 90%;
+            }
+
+            iframe {
+                height: 80vh; 
+            }
+
+            .back-button {
+                display: block; 
+                margin: 0 auto; 
+                width: 80%; 
+                max-width: 300px; 
+        }
+
+        @media (max-width: 480px) {
+            .pdf-container {
+                width: 100%;
+            }
+
+            iframe {
+                height: 60vh; 
+            }
+        }}
     </style>
 </head>
 <body>
