@@ -26,9 +26,7 @@
             color: #9b59b6;
         }
 
-       
         .pdf-container {
-            /* ... (seu CSS anterior) ... */
             width: 50%;
             max-width: 800px;
             background-color: #fff;
@@ -37,14 +35,14 @@
             padding: 20px;
             text-align: center;
             margin-bottom: 40px;
-            overflow: auto; 
+            overflow: auto;
         }
 
         iframe {
             width: 100%;
-            max-height: 80vh; 
             border-radius: 8px;
-            overflow: auto;  
+            overflow: auto;
+            height: 500px; 
         }
 
         .back-container {
@@ -69,10 +67,13 @@
             transform: scale(1.01) translateY(-4px);
         }
 
-       
         @media (max-width: 768px) {
             .pdf-container {
                 width: 90%;
+            }
+
+            iframe {
+                max-height: 80vh; /* Limita a altura em telas menores */
             }
 
             .back-button {
@@ -83,7 +84,6 @@
             }
         }
 
-        
         @media (max-width: 480px) {
             .pdf-container {
                 width: 100%;
